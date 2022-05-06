@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".addfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.widget.Button
+        android:id="@+id/public_discuss"
+        android:layout_width="280dp"
+        app:layout_constraintHorizontal_bias="0.7"
+        android:layout_height="70dp"
+        app:layout_constraintVertical_bias="0.96"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/white"
+        android:text="create a Question"
+        android:textStyle="bold"
+
+        android:textSize="20dp"
+        android:background="@drawable/button_design"
+
+        app:layout_constraintBottom_toTopOf="@+id/share_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.widget.Button
+        android:id="@+id/share_image"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+
+        android:background="@drawable/button_design"
+        android:text="Add image with text"
+app:layout_constraintHorizontal_bias="0.7"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/share_text"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_design"
+        android:text="Add a text"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0.7"
+        android:layout_marginTop="40dp"
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share_image" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/share_text"
+        app:layout_constraintEnd_toStartOf="@+id/share_text"
+        app:layout_constraintTop_toTopOf="@+id/share_text" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/edit"
+        app:layout_constraintBottom_toBottomOf="@+id/public_discuss"
+        app:layout_constraintEnd_toStartOf="@+id/public_discuss"
+        app:layout_constraintTop_toTopOf="@+id/public_discuss" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/photo"
+        app:layout_constraintEnd_toStartOf="@+id/share_image"
+        app:layout_constraintTop_toTopOf="@+id/share_image">
+
+    </ImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/chatchat"
+        android:id="@+id/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_dp">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
